@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Pistas</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #game-container {
+            text-align: center;
+        }
+        #word-input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #submit-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <input type="text" id="word-input" placeholder="Ingresa la respuesta">
+        <button id="submit-btn">Enviar</button>
+    </div>
+
+    <script>
+        console.log("Pista: el mejor dia de mi vida");
+
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const input = document.getElementById('word-input');
+            if (input.value === "26/10/2023") {
+                window.location.href = "https://drive.google.com/file/d/1ux5Q4NcvBwc-tKcqQaTdjuUTucE577kt/view?usp=sharing";
+            } else {
+                alert("Que dia te conoci :3");
+            }
+        });
+    </script>
+</body>
+</html>
